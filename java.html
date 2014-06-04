@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Java Script</title>
+
+ <script src="scripts/jquery.js"> </script>
+ 
+
+</head>
+
+<body>
+<!--
+<script>
+
+$(function(){
+	var a=20;
+	var b=10;
+	var c=a+b;
+	alert (c);
+	
+	})
+	</script>
+    
+    <script>
+
+$(function(){
+	var a="Hola";
+	
+	alert (a);
+	
+	})
+	</script>
+    
+    <script>
+
+$(function(){
+	var a=5;
+	var b=10;
+	var c=a*b;
+	alert ("El Resultado es:" +c);
+	
+	})
+	</script>
+    
+    
+       <script>
+
+$(function(){
+	var a=50;
+	var b=10;
+	var c=a/b;
+	alert (c);
+	
+	})
+	</script> 
+	
+	<script>
+
+$(function(){
+	var a="Hola";
+	var b="Mundo";
+	var c=a+"  "+b;
+	alert ("Resultado " +c);
+	
+	})
+	</script>
+	
+		<script>
+    $(function(){
+	var arreglo=['Hola','Mundo'];;
+	arreglo.push('Adios');
+	alert (arreglo);
+	
+	})
+	</script> 
+    
+    <script>
+    $(function(){
+	var arreglo=['Hola','Mundo'];;
+	arreglo[1]="World";
+	alert (arreglo);
+	
+	})
+	</script>
+     Formulario
+     <br />
+     <br />
+    <input type="text" id="valor1" name="valor1" />
+    <br />
+    <input type="text" id="valor2" name="valor2"  />
+    <br />
+    <input type="text" id="resultado" name="resultado"  />
+    <br />
+    <input type="button" value="Ejecutar" onclick="operacion()" />
+    
+    
+    <script>
+	function operacion(){
+		var a=$('#valor1').val();
+		var b=$('#valor2').val();
+		var c= parseInt(a) * parseInt(b);
+		$('#resultado').val(c);
+		
+	}
+	</script>
+	
+    <br />
+    <br />
+    <br />
+    Valor
+	<input type="text" id="valor" name="valor" />
+    <br />
+    <input type="button" value="Ejecutar" onclick="resultado()" />
+    <br />
+    Arreglo
+    <input type="text" id="arreglo" name="arreglo" />
+    
+	<script>
+	var arreglo=new Array();
+	function resultado(){
+    var a=$('#valor').val();
+	arreglo.push(a);
+	
+	$('#arreglo').val(arreglo);
+	}
+	</script>	
+    
+     <script>
+	function operacion(){
+		var a=$('#nombre').val();
+		alert (a);
+	}
+	</script>
+    
+    <table width="30%">
+    <tr>
+    <td>Nombre:</td>
+    <td><input type="text" id="nombre" name="nombre" />
+    </td>
+    </tr>
+    <tr>
+    <td colspan="2">
+    <input type="button" value="Enviar" onclick="operacion()"/>
+    </td>
+    </tr>
+    </table>
+    
+    <input type="text" id="numero" name="numero" />
+    <br />
+    <input type="button" value="Enviar" onClick="condicion()" />
+    
+    <script>
+	
+	function condicion(){
+	var a=$('#numero').val();
+	var b=a%2;
+	
+	if (b==0){
+		alert ('Es par');
+	}
+	else{
+		alert('Es impar');
+	}
+	}
+	</script>
+    
+    <script>
+	$(function(){
+		for(conta=0; conta<10; conta++){
+			alert(conta);
+		}
+	})
+	
+	</script>
+    	
+        <script>
+	$(function(){
+		var a=prompt("Cual es tu nombre?", "Escribe tu nombre");
+		var b=prompt("Cual es tu apellido?", "Escribe tu apellido");
+		alert('Tu nombre es:' +a +' '+b);
+	})
+	
+	</script>-->
+    
+     <script>
+	$(function(){
+		var mult=0;
+		for(i=0; i<5; i++){
+			var a=prompt("Valores", "Ingresa un valor");
+			mult=mult+parseInt(a);
+		}
+		var b=a%2;
+		if (b==0){
+		alert ('Es par: '  +mult);
+	}
+	else{
+		alert('Es impar: ' +mult);
+	}
+	})
+	
+	
+	</script>
+	
+    <!--5 prom 5 palabras y que devuelva un arreglo-->
+    
+      <script>
+     var arreglo=new Array();
+	$(function(){
+		for(i=0; i<5; i++){
+			var a=prompt("Arreglo", "Ingresa una frase");
+			arreglo.push(a);
+		}
+		
+		alert('El arreglo es: '+arreglo)
+	
+	})
+	
+	
+	
+	</script>
